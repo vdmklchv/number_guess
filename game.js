@@ -1,7 +1,6 @@
 let target;
 
 const humanGuessInput = document.getElementById('human-guess');
-
 const roundNumberDisplay = document.getElementById('round-number');
 
 const computerGuessDisplay = document.getElementById('computer-guess');
@@ -18,6 +17,7 @@ guessButton.addEventListener('click', () => {
   target = generateTarget();
   // Retrieve the player's guess
   const currentHumanGuess = humanGuessInput.value;
+
   // Make a random 'computer guess'
   const computerGuess = Math.floor(Math.random() * 10);
 
@@ -97,3 +97,4 @@ const handleValueChange = value => {
 humanGuessInput.addEventListener('input', function(e) {
   handleValueChange(e.target.value);
 });
+
